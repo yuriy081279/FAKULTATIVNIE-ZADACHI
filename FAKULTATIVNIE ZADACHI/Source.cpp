@@ -4,10 +4,11 @@ using namespace std;
 void main()
 {
 	setlocale(LC_ALL, "");
-	const int STROKA = 7;
-	const int STOLB = 4;
+	const int STROKA = 6;
+	const int STOLB = 10;
 	int arr[STROKA][STOLB];
 	int x = 0;
+	int y = STROKA - STOLB;
 	//Заполнение матрицы случайными числами
 	for (int i = 0; i < STROKA; i++)
 	{
@@ -37,7 +38,7 @@ void main()
 		{
 			//cout << "arr[i][j]= " << arr[i][j];
 			//cout << endl;
-			for (int c = 0; c <=i; c++)
+			for (int c = 0; c <= i; c++)
 			{
 				for (int d = 0; d < STOLB; d++)
 				{
@@ -51,13 +52,29 @@ void main()
 			}			
 			for (int z = i; z < STROKA; z++)
 			{
-				for (int t = j; t < STOLB; t++)
+				if (y >= 0)
 				{
-					//cout << "arr[z][t]= " << arr[z][t];
-					//cout << endl;
-					if (arr[i][j] == arr[z][t+1] || arr[i][j] == arr[z+1][t])
+					for (int t = j; t < STOLB + y; t++)
 					{
-						x = 0;
+						//cout << "arr[z][t+1]= " << arr[z][t+1];
+						//cout << endl;
+						if (arr[i][j] == arr[z][t + 1])// || arr[i][j] == arr[z + 1][t])
+						{
+							x = 0;							
+						}
+
+					}
+				}
+				if (y < 0)
+				{
+					for (int t = j; t < STOLB - y; t++)
+					{
+						//cout << "arr[z][t+1]= " << arr[z][t+1];
+						//cout << endl;
+						if (arr[i][j] == arr[z][t + 1])// || arr[i][j] == arr[z + 1][t])
+						{
+						  x = 0;							
+						}
 					}
 				}
 			}
