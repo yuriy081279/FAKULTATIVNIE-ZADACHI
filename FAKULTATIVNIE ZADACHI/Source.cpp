@@ -1,4 +1,4 @@
-#include<iostream>
+п»ї#include<iostream>
 using namespace std;
 #define tab "\t"
 void main()
@@ -8,7 +8,7 @@ void main()
 	const int STOLB = 4;
 	int arr[STROKA][STOLB];
 	int x = 0;
-	//Заполнение матрицы случайными числами
+	//Р—Р°РїРѕР»РЅРµРЅРёРµ РјР°С‚СЂРёС†С‹ СЃР»СѓС‡Р°Р№РЅС‹РјРё С‡РёСЃР»Р°РјРё
 	for (int i = 0; i < STROKA; i++)
 	{
 		for (int j = 0; j < STOLB; j++)
@@ -17,7 +17,7 @@ void main()
 		}		
 	}
 	cout << endl;
-	//Вывод исходной матрицы на экран	
+	//Р’С‹РІРѕРґ РёСЃС…РѕРґРЅРѕР№ РјР°С‚СЂРёС†С‹ РЅР° СЌРєСЂР°РЅ	
 	for (int i = 0; i < STROKA; i++)
 	{
 		for (int j = 0; j < STOLB; j++)
@@ -27,7 +27,7 @@ void main()
 		cout << endl;
 	}
 	cout << endl;
-	cout << " Вывод повторяющихся значений матрицы: ";
+	cout << " Р’С‹РІРѕРґ РїРѕРІС‚РѕСЂСЏСЋС‰РёС…СЃСЏ Р·РЅР°С‡РµРЅРёР№ РјР°С‚СЂРёС†С‹: ";
 	cout << endl;
 	cout << endl;
 	for (int i = STROKA - 1; i >= 0; i--)
@@ -63,9 +63,9 @@ void main()
 			}
 			if (x > 1)
 			{
-				cout << " Повторяющееся значение = " << arr[i][j] << tab;
+				cout << " РџРѕРІС‚РѕСЂСЏСЋС‰РµРµСЃСЏ Р·РЅР°С‡РµРЅРёРµ = " << arr[i][j] << tab;
 				cout << endl;
-				cout << " Количество повторений этого значения = " << x;
+				cout << " РљРѕР»РёС‡РµСЃС‚РІРѕ РїРѕРІС‚РѕСЂРµРЅРёР№ СЌС‚РѕРіРѕ Р·РЅР°С‡РµРЅРёСЏ = " << x;
 				cout << endl;
 			}
 			x = 0;
