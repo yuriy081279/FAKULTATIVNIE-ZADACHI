@@ -55,7 +55,7 @@ void main()
 				{
 					for (int t = j; t < STOLB; t++)
 					{
-						if (arr[i][j] == arr[z][t + 1] || arr[i][j] == arr[z + 1][t])
+						if (arr[i][j] == arr[z][t + 1])
 						{
 							x = 0;
 						}
@@ -65,7 +65,7 @@ void main()
 				{
 					for (int t = 0; t < STOLB; t++)
 					{
-						if (arr[i][j] == arr[z][t + 1] || arr[i][j] == arr[z + 1][t])
+						if (arr[i][j] == arr[z][t + 1])
 						{
 							x = 0;
 						}
